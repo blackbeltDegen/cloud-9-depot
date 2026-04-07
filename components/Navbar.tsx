@@ -47,7 +47,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <div style={{ display: "flex", alignItems: "center", gap: 32 }} className="hidden md:flex">
+        <div style={{ alignItems: "center", gap: 32 }} className="hidden md:flex">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} style={{
               fontSize: "0.875rem", fontWeight: 500,
