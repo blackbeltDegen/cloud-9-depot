@@ -1,88 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --green-neon: #7EE83A;
-  --green-dark: #1F6B1A;
-  --green-mid: #3BAF2A;
-  --bg-black: #080808;
-  --bg-card: #111111;
-  --bg-card2: #181818;
-  --text-white: #F5F5F5;
-  --text-muted: #888888;
+  --green: #7EE83A;
+  --green-dim: #7EE83A55;
+  --green-faint: #7EE83A18;
+  --bg: #0a0a0a;
+  --card: #141414;
+  --card-border: #272727;
+  --text: #f0f0f0;
+  --muted: #666;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background-color: var(--bg-black);
-  color: var(--text-white);
-  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #111; }
-::-webkit-scrollbar-thumb { background: var(--green-dark); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--green-neon); }
-
-.neon-text {
-  color: var(--green-neon);
-  text-shadow: 0 0 10px #7EE83A88, 0 0 30px #7EE83A44;
-}
-
-.neon-btn {
-  background: transparent;
-  border: 2px solid var(--green-neon);
-  color: var(--green-neon);
-  text-shadow: 0 0 8px #7EE83A99;
-  box-shadow: 0 0 12px #7EE83A55, inset 0 0 8px #7EE83A11;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.neon-btn:hover {
-  background: var(--green-neon);
-  color: #080808;
-  text-shadow: none;
-  box-shadow: 0 0 24px #7EE83Aaa, 0 0 48px #7EE83A55;
-}
-
-.neon-btn-solid {
-  background: var(--green-neon);
-  border: 2px solid var(--green-neon);
-  color: #080808;
-  font-weight: 700;
-  box-shadow: 0 0 16px #7EE83A88;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.neon-btn-solid:hover {
-  box-shadow: 0 0 32px #7EE83Acc, 0 0 60px #7EE83A55;
-  transform: translateY(-2px);
-}
-
-.card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 32px #7EE83A33;
-  border-color: var(--green-neon) !important;
-}
-
-.section-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--green-dark), transparent);
-  margin: 0 auto;
-  width: 80%;
-}
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green); }
